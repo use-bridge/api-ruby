@@ -11,7 +11,7 @@ module BridgeApi
       @raw_client = BridgeApi::Internal::Http::RawClient.new(
         base_url: base_url || BridgeApi::Environment::PRODUCTION,
         headers: {
-          "User-Agent" => "usebridge-api/0.1.2",
+          "User-Agent" => "usebridge-api/0.1.3",
           "X-Fern-Language" => "Ruby",
           "X-API-Key" => api_key.to_s
         },
