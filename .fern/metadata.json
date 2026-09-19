@@ -1,0 +1,14 @@
+{
+  "cliVersion": "5.44.7",
+  "generatorName": "fernapi/fern-ruby-sdk",
+  "generatorVersion": "1.25.0",
+  "generatorConfig": {
+    "moduleName": "BridgeApi"
+  },
+  "originGitCommit": "4159d5657339da64821af30a8af3e183ab737a51",
+  "originGitCommitIsDirty": true,
+  "invokedBy": "ci",
+  "requestedVersion": "0.1.0",
+  "ciProvider": "github",
+  "sdkVersion": "0.1.0"
+}
