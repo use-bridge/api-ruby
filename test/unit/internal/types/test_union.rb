@@ -2,27 +2,27 @@
 
 require "test_helper"
 
-describe BridgeApi::Internal::Types::Union do
-  class Rectangle < BridgeApi::Internal::Types::Model
+describe Bridge_api::Internal::Types::Union do
+  class Rectangle < Bridge_api::Internal::Types::Model
     literal :type, "square"
 
     field :area, Float
   end
 
-  class Circle < BridgeApi::Internal::Types::Model
+  class Circle < Bridge_api::Internal::Types::Model
     literal :type, "circle"
 
     field :area, Float
   end
 
-  class Pineapple < BridgeApi::Internal::Types::Model
+  class Pineapple < Bridge_api::Internal::Types::Model
     literal :type, "pineapple"
 
     field :area, Float
   end
 
   module Shape
-    extend BridgeApi::Internal::Types::Union
+    extend Bridge_api::Internal::Types::Union
 
     discriminant :type
 
@@ -31,7 +31,7 @@ describe BridgeApi::Internal::Types::Union do
   end
 
   module StringOrInteger
-    extend BridgeApi::Internal::Types::Union
+    extend Bridge_api::Internal::Types::Union
 
     member String
     member Integer

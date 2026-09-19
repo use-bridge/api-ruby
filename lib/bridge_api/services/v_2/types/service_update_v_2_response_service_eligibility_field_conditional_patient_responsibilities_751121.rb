@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+
+module Bridge_api
+  module Services
+    module V2
+      module Types
+        class ServiceUpdateV2ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition < Internal::Types::Model
+          field :diagnoses, -> { Internal::Types::Array[String] }, optional: true, nullable: false
+        end
+      end
+    end
+  end
+end

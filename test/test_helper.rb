@@ -1,3 +1,3 @@
 # frozen_string_literal: true
 
-require_relative "../lib/BridgeApi"
+require_relative "../lib/bridge_api"

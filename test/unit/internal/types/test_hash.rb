@@ -2,9 +2,9 @@
 
 require "test_helper"
 
-describe BridgeApi::Internal::Types::Hash do
+describe Bridge_api::Internal::Types::Hash do
   module TestHash
-    SymbolStringHash = BridgeApi::Internal::Types::Hash[Symbol, String]
+    SymbolStringHash = Bridge_api::Internal::Types::Hash[Symbol, String]
   end
 
   describe ".[]" do
@@ -30,19 +30,19 @@ describe BridgeApi::Internal::Types::Hash do
     end
 
     it "raises an error with other values with strictness on" do
-      assert_raises BridgeApi::Internal::Errors::TypeError do
+      assert_raises Bridge_api::Internal::Errors::TypeError do
         TestHash::SymbolStringHash.coerce(Object.new, strict: true)
       end
     end
 
     it "raises an error with non-coercable key types with strictness on" do
-      assert_raises BridgeApi::Internal::Errors::TypeError do
+      assert_raises Bridge_api::Internal::Errors::TypeError do
         TestHash::SymbolStringHash.coerce({ Object.new => 1 }, strict: true)
       end
     end
 
     it "raises an error with non-coercable value types with strictness on" do
-      assert_raises BridgeApi::Internal::Errors::TypeError do
+      assert_raises Bridge_api::Internal::Errors::TypeError do
         TestHash::SymbolStringHash.coerce({ "foobar" => Object.new }, strict: true)
       end
     end

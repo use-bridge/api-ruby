@@ -4,7 +4,7 @@ require "test_helper"
 require "socket"
 require "zlib"
 
-describe BridgeApi::Internal::Http::RawClient do
+describe Bridge_api::Internal::Http::RawClient do
   def make_response(status_code)
     response = Minitest::Mock.new
     response.expect(:code, status_code.to_s)
@@ -13,7 +13,7 @@ describe BridgeApi::Internal::Http::RawClient do
 
   describe "#should_retry?" do
     let(:client) do
-      BridgeApi::Internal::Http::RawClient.new(base_url: "https://example.com", max_retries: 3)
+      Bridge_api::Internal::Http::RawClient.new(base_url: "https://example.com", max_retries: 3)
     end
 
     it "retries on 408 Request Timeout" do
@@ -80,11 +80,11 @@ describe BridgeApi::Internal::Http::RawClient do
         request_lines
       end
 
-      client = BridgeApi::Internal::Http::RawClient.new(
+      client = Bridge_api::Internal::Http::RawClient.new(
         base_url: "http://127.0.0.1:#{port}",
         max_retries: 0
       )
-      request = BridgeApi::Internal::JSON::Request.new(
+      request = Bridge_api::Internal::JSON::Request.new(
         base_url: "http://127.0.0.1:#{port}",
         path: "/gzip",
         method: "GET",
@@ -116,13 +116,13 @@ describe BridgeApi::Internal::Http::RawClient do
 
   describe "#resolve_auth_headers" do
     it "returns an empty hash when no auth provider is configured" do
-      client = BridgeApi::Internal::Http::RawClient.new(base_url: "https://example.com")
+      client = Bridge_api::Internal::Http::RawClient.new(base_url: "https://example.com")
 
       assert_equal({}, client.resolve_auth_headers)
     end
 
     it "consults the auth provider on every call so an expired token is refreshed" do
-      client = BridgeApi::Internal::Http::RawClient.new(
+      client = Bridge_api::Internal::Http::RawClient.new(
         base_url: "https://example.com",
         auth_provider: RefreshingAuthProvider.new
       )
@@ -134,7 +134,7 @@ describe BridgeApi::Internal::Http::RawClient do
 
   describe "#build_http_request auth header precedence" do
     let(:client) do
-      BridgeApi::Internal::Http::RawClient.new(
+      Bridge_api::Internal::Http::RawClient.new(
         base_url: "https://example.com",
         headers: { "Authorization" => "Bearer STATIC" }
       )
@@ -170,7 +170,7 @@ describe BridgeApi::Internal::Http::RawClient do
 
   describe "#protected_header_keys" do
     def client_with(overridable_headers)
-      BridgeApi::Internal::Http::RawClient.new(
+      Bridge_api::Internal::Http::RawClient.new(
         base_url: "https://example.com",
         headers: { "X-Api-Version" => "1", "User-Agent" => "sdk/0.0.1" },
         overridable_headers: overridable_headers

@@ -2,15 +2,15 @@
 
 require "test_helper"
 
-describe BridgeApi::Internal::Types::Model do
+describe Bridge_api::Internal::Types::Model do
   module StringInteger
-    extend BridgeApi::Internal::Types::Union
+    extend Bridge_api::Internal::Types::Union
 
     member String
     member Integer
   end
 
-  class ExampleModel < BridgeApi::Internal::Types::Model
+  class ExampleModel < Bridge_api::Internal::Types::Model
     field :name, String
     field :rating, StringInteger, optional: true
     field :year, Integer, optional: true, nullable: true, api_name: "yearOfRelease"
@@ -24,20 +24,20 @@ describe BridgeApi::Internal::Types::Model do
     field :type, String, default: "example"
   end
 
-  class ExampleWithBooleans < BridgeApi::Internal::Types::Model
-    field :enabled, BridgeApi::Internal::Types::Boolean
-    field :archived, BridgeApi::Internal::Types::Boolean, default: true
+  class ExampleWithBooleans < Bridge_api::Internal::Types::Model
+    field :enabled, Bridge_api::Internal::Types::Boolean
+    field :archived, Bridge_api::Internal::Types::Boolean, default: true
   end
 
-  class ExampleWithFalseDefault < BridgeApi::Internal::Types::Model
-    field :archived, BridgeApi::Internal::Types::Boolean, default: false
+  class ExampleWithFalseDefault < Bridge_api::Internal::Types::Model
+    field :archived, Bridge_api::Internal::Types::Boolean, default: false
   end
 
-  class ExampleChild < BridgeApi::Internal::Types::Model
+  class ExampleChild < Bridge_api::Internal::Types::Model
     field :value, String
   end
 
-  class ExampleParent < BridgeApi::Internal::Types::Model
+  class ExampleParent < Bridge_api::Internal::Types::Model
     field :child, ExampleChild
   end
 
@@ -153,7 +153,7 @@ describe BridgeApi::Internal::Types::Model do
   end
 
   describe "#inspect" do
-    class SensitiveModel < BridgeApi::Internal::Types::Model
+    class SensitiveModel < Bridge_api::Internal::Types::Model
       field :username, String
       field :password, String
       field :client_secret, String

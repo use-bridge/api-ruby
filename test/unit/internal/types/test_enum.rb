@@ -2,10 +2,10 @@
 
 require "test_helper"
 
-describe BridgeApi::Internal::Types::Enum do
+describe Bridge_api::Internal::Types::Enum do
   module EnumTest
     module ExampleEnum
-      extend BridgeApi::Internal::Types::Enum
+      extend Bridge_api::Internal::Types::Enum
 
       FOO = :foo
       BAR = :bar
@@ -34,7 +34,7 @@ describe BridgeApi::Internal::Types::Enum do
     end
 
     it "raises an error if value is not a member with strictness on" do
-      assert_raises BridgeApi::Internal::Errors::TypeError do
+      assert_raises Bridge_api::Internal::Errors::TypeError do
         EnumTest::ExampleEnum.coerce(1, strict: true)
       end
     end
