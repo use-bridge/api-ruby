@@ -44,9 +44,16 @@ Metrics/ModuleLength:
 Layout/LineLength:
   Enabled: false
 
+# The generator emits numbered identifiers from the API spec (v_2, icd_10,
+# line_1). Rubocop treats even warning-severity offenses as CI failures.
 Naming/VariableNumber:
-  EnforcedStyle: normalcase
-  Severity: warning
+  Enabled: false
+
+# moduleName is a Ruby constant (BridgeApi), so the entrypoint file is PascalCase.
+Naming/FileName:
+  Exclude:
+    - lib/BridgeApi.rb
+    - lib/bridge_api.rb
 
 Style/Documentation:
   Enabled: false
