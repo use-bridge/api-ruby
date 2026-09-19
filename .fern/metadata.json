@@ -3,12 +3,12 @@
   "generatorName": "fernapi/fern-ruby-sdk",
   "generatorVersion": "1.25.0",
   "generatorConfig": {
-    "moduleName": "bridge_api"
+    "moduleName": "BridgeApi"
   },
-  "originGitCommit": "1d2d4d0ff7c9a3119e29c78bd5ea36767f63b9bc",
+  "originGitCommit": "eaaac350eb4bc4b04c1951807e0059a32e43521c",
   "originGitCommitIsDirty": true,
   "invokedBy": "ci",
-  "requestedVersion": "0.1.1",
+  "requestedVersion": "0.1.2",
   "ciProvider": "github",
-  "sdkVersion": "0.1.1"
+  "sdkVersion": "0.1.2"
 }

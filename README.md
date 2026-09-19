@@ -31,9 +31,9 @@ A full reference for this library is available [here](https://github.com/use-bri
 Instantiate and use the client with the following:
 
 ```ruby
-require "bridge_api"
+require "bridgeapi"
 
-client = Bridge_api::Client.new(api_key: "<value>")
+client = BridgeApi::Client.new(api_key: "<value>")
 
 client.billing.estimate_charges.create_estimate_charge(
   patient_id: "patientId",
@@ -46,18 +46,18 @@ client.billing.estimate_charges.create_estimate_charge(
 This SDK allows you to configure different environments or custom URLs for API requests. You can either use the predefined environments or specify your own custom URL.
 ### Environments
 ```ruby
-require "bridge_api"
+require "BridgeApi"
 
-bridge_api = Bridge_api::Client.new(
-    base_url: Bridge_api::Environment::PRODUCTION
+BridgeApi = BridgeApi::Client.new(
+    base_url: BridgeApi::Environment::PRODUCTION
 )
 ```
 
 ### Custom URL
 ```ruby
-require "bridge_api"
+require "BridgeApi"
 
-client = Bridge_api::Client.new(
+client = BridgeApi::Client.new(
     base_url: "https://example.com"
 )
 ```
@@ -67,23 +67,23 @@ client = Bridge_api::Client.new(
 Failed API calls will raise errors that can be rescued from granularly.
 
 ```ruby
-require "bridge_api"
+require "BridgeApi"
 
-client = Bridge_api::Client.new(
+client = BridgeApi::Client.new(
     base_url: "https://example.com"
 )
 
 begin
     result = client.billing.estimate_charges.create_estimate_charge
-rescue Bridge_api::Errors::TimeoutError
+rescue BridgeApi::Errors::TimeoutError
     puts "API didn't respond before our timeout elapsed"
-rescue Bridge_api::Errors::ServiceUnavailableError
+rescue BridgeApi::Errors::ServiceUnavailableError
     puts "API returned status 503, is probably overloaded, try again later"
-rescue Bridge_api::Errors::ServerError
+rescue BridgeApi::Errors::ServerError
     puts "API returned some other 5xx status, this is probably a bug"
-rescue Bridge_api::Errors::ResponseError => e
+rescue BridgeApi::Errors::ResponseError => e
     puts "API returned an unexpected status other than 5xx: #{e.code} #{e.message}"
-rescue Bridge_api::Errors::ApiError => e
+rescue BridgeApi::Errors::ApiError => e
     puts "Some other error occurred when calling the API: #{e.message}"
 end
 ```
@@ -109,9 +109,9 @@ The `retryStatusCodes` configuration controls which [5XX](https://developer.mozi
 Use the `max_retries` option to configure this behavior.
 
 ```ruby
-require "bridge_api"
+require "BridgeApi"
 
-client = Bridge_api::Client.new(
+client = BridgeApi::Client.new(
     base_url: "https://example.com",
     max_retries: 3  # Configure max retries (default is 2)
 )
@@ -122,7 +122,7 @@ client = Bridge_api::Client.new(
 The SDK defaults to a 60 second timeout. Use the `timeout` option to configure this behavior.
 
 ```ruby
-require "bridge_api"
+require "BridgeApi"
 
 response = client.billing.estimate_charges.create_estimate_charge(
     ...,
@@ -135,7 +135,7 @@ response = client.billing.estimate_charges.create_estimate_charge(
 If you would like to send additional headers as part of the request, use the `additional_headers` request option.
 
 ```ruby
-require "bridge_api"
+require "BridgeApi"
 
 response = client.billing.estimate_charges.create_estimate_charge(
     ...,
@@ -152,7 +152,7 @@ response = client.billing.estimate_charges.create_estimate_charge(
 If you would like to send additional query parameters as part of the request, use the `additional_query_parameters` request option.
 
 ```ruby
-require "bridge_api"
+require "BridgeApi"
 
 response = client.billing.estimate_charges.create_estimate_charge(
     ...,

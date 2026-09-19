@@ -2,26 +2,26 @@
 
 require "test_helper"
 
-describe Bridge_api::Internal::Types::Utils do
-  Utils = Bridge_api::Internal::Types::Utils
+describe BridgeApi::Internal::Types::Utils do
+  Utils = BridgeApi::Internal::Types::Utils
 
   module TestUtils
-    class M < Bridge_api::Internal::Types::Model
+    class M < BridgeApi::Internal::Types::Model
       field :value, String
     end
 
-    class UnionMemberA < Bridge_api::Internal::Types::Model
+    class UnionMemberA < BridgeApi::Internal::Types::Model
       literal :type, "A"
       field :only_on_a, String
     end
 
-    class UnionMemberB < Bridge_api::Internal::Types::Model
+    class UnionMemberB < BridgeApi::Internal::Types::Model
       literal :type, "B"
       field :only_on_b, String
     end
 
     module U
-      extend Bridge_api::Internal::Types::Union
+      extend BridgeApi::Internal::Types::Union
 
       discriminant :type
 
@@ -29,8 +29,8 @@ describe Bridge_api::Internal::Types::Utils do
       member -> { UnionMemberB }, key: "B"
     end
 
-    SymbolStringHash = Bridge_api::Internal::Types::Hash[Symbol, String]
-    SymbolModelHash = -> { Bridge_api::Internal::Types::Hash[Symbol, TestUtils::M] }
+    SymbolStringHash = BridgeApi::Internal::Types::Hash[Symbol, String]
+    SymbolModelHash = -> { BridgeApi::Internal::Types::Hash[Symbol, TestUtils::M] }
   end
 
   describe ".coerce" do
@@ -58,7 +58,7 @@ describe Bridge_api::Internal::Types::Utils do
       end
 
       it "raises an error if value cannot be coerced and strict" do
-        assert_raises Bridge_api::Internal::Errors::TypeError do
+        assert_raises BridgeApi::Internal::Errors::TypeError do
           Utils.coerce(String, Object.new, strict: true)
         end
       end
@@ -77,7 +77,7 @@ describe Bridge_api::Internal::Types::Utils do
       end
 
       it "raises an error if value cannot be coerced and strict" do
-        assert_raises Bridge_api::Internal::Errors::TypeError do
+        assert_raises BridgeApi::Internal::Errors::TypeError do
           Utils.coerce(Symbol, Object.new, strict: true)
         end
       end
@@ -100,7 +100,7 @@ describe Bridge_api::Internal::Types::Utils do
       end
 
       it "raises an error if value cannot be coerced and strict" do
-        assert_raises Bridge_api::Internal::Errors::TypeError do
+        assert_raises BridgeApi::Internal::Errors::TypeError do
           Utils.coerce(Integer, Object.new, strict: true)
         end
       end
@@ -122,7 +122,7 @@ describe Bridge_api::Internal::Types::Utils do
       end
 
       it "raises an error if value cannot be coerced and strict" do
-        assert_raises Bridge_api::Internal::Errors::TypeError do
+        assert_raises BridgeApi::Internal::Errors::TypeError do
           Utils.coerce(Float, Object.new, strict: true)
         end
       end
@@ -150,7 +150,7 @@ describe Bridge_api::Internal::Types::Utils do
 
     describe "Enum" do
       module ExampleEnum
-        extend Bridge_api::Internal::Types::Enum
+        extend BridgeApi::Internal::Types::Enum
 
         FOO = :FOO
         BAR = :BAR
@@ -168,9 +168,9 @@ describe Bridge_api::Internal::Types::Utils do
     end
 
     describe "Array" do
-      StringArray = Bridge_api::Internal::Types::Array[String]
-      ModelArray = -> { Bridge_api::Internal::Types::Array[TestUtils::M] }
-      UnionArray = -> { Bridge_api::Internal::Types::Array[TestUtils::U] }
+      StringArray = BridgeApi::Internal::Types::Array[String]
+      ModelArray = -> { BridgeApi::Internal::Types::Array[TestUtils::M] }
+      UnionArray = -> { BridgeApi::Internal::Types::Array[TestUtils::U] }
 
       it "coerces an array of literals" do
         assert_equal %w[a b c], Utils.coerce(StringArray, %w[a b c])

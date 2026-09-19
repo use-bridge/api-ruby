@@ -3,8 +3,8 @@
 require "test_helper"
 require "tempfile"
 
-describe Bridge_api::Internal::Multipart::FormData do
-  FormData = Bridge_api::Internal::Multipart::FormData
+describe BridgeApi::Internal::Multipart::FormData do
+  FormData = BridgeApi::Internal::Multipart::FormData
 
   describe "#add_file" do
     it "reads the file contents and filename from a path string" do

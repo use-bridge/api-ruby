@@ -1,6 +1,6 @@
 # Reference
 ## Billing EstimateCharges
-<details><summary><code>client.billing.estimate_charges.<a href="/lib/bridge_api/billing/estimate_charges/client.rb">list_estimate_charges</a>() -> Bridge_api::Billing::EstimateCharges::Types::EstimateChargesListV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="/lib/BridgeApi/billing/estimate_charges/client.rb">list_estimate_charges</a>() -> BridgeApi::Billing::EstimateCharges::Types::EstimateChargesListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -60,7 +60,7 @@ client.billing.estimate_charges.list_estimate_charges
 <dl>
 <dd>
 
-**filter_status:** `Bridge_api::Billing::EstimateCharges::Types::EstimateChargesListV1FilterStatus` — should be JSON-encoded, for example filter.status="AUTHORIZED"
+**filter_status:** `BridgeApi::Billing::EstimateCharges::Types::EstimateChargesListV1FilterStatus` — should be JSON-encoded, for example filter.status="AUTHORIZED"
     
 </dd>
 </dl>
@@ -84,7 +84,7 @@ client.billing.estimate_charges.list_estimate_charges
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::EstimateCharges::RequestOptions` 
+**request_options:** `BridgeApi::Billing::EstimateCharges::RequestOptions` 
     
 </dd>
 </dl>
@@ -96,7 +96,7 @@ client.billing.estimate_charges.list_estimate_charges
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="/lib/bridge_api/billing/estimate_charges/client.rb">create_estimate_charge</a>(request) -> Bridge_api::Billing::EstimateCharges::Types::EstimateChargeCreateV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="/lib/BridgeApi/billing/estimate_charges/client.rb">create_estimate_charge</a>(request) -> BridgeApi::Billing::EstimateCharges::Types::EstimateChargeCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -145,7 +145,7 @@ client.billing.estimate_charges.create_estimate_charge(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Billing::EstimateCharges::Types::EstimateChargeCreateV1Request` 
+**request:** `BridgeApi::Billing::EstimateCharges::Types::EstimateChargeCreateV1Request` 
     
 </dd>
 </dl>
@@ -153,7 +153,7 @@ client.billing.estimate_charges.create_estimate_charge(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::EstimateCharges::RequestOptions` 
+**request_options:** `BridgeApi::Billing::EstimateCharges::RequestOptions` 
     
 </dd>
 </dl>
@@ -165,7 +165,7 @@ client.billing.estimate_charges.create_estimate_charge(
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="/lib/bridge_api/billing/estimate_charges/client.rb">authorize_stripe_estimate_charge</a>(id:) -> Bridge_api::Billing::EstimateCharges::Types::EstimateChargeAuthorizeStripeV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="/lib/BridgeApi/billing/estimate_charges/client.rb">authorize_stripe_estimate_charge</a>(id:) -> BridgeApi::Billing::EstimateCharges::Types::EstimateChargeAuthorizeStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -222,7 +222,7 @@ client.billing.estimate_charges.authorize_stripe_estimate_charge(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::EstimateCharges::RequestOptions` 
+**request_options:** `BridgeApi::Billing::EstimateCharges::RequestOptions` 
     
 </dd>
 </dl>
@@ -234,7 +234,7 @@ client.billing.estimate_charges.authorize_stripe_estimate_charge(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="/lib/bridge_api/billing/estimate_charges/client.rb">capture_stripe_estimate_charge</a>(id:) -> Bridge_api::Billing::EstimateCharges::Types::EstimateChargeCaptureStripeV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="/lib/BridgeApi/billing/estimate_charges/client.rb">capture_stripe_estimate_charge</a>(id:) -> BridgeApi::Billing::EstimateCharges::Types::EstimateChargeCaptureStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -291,7 +291,7 @@ client.billing.estimate_charges.capture_stripe_estimate_charge(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::EstimateCharges::RequestOptions` 
+**request_options:** `BridgeApi::Billing::EstimateCharges::RequestOptions` 
     
 </dd>
 </dl>
@@ -303,7 +303,7 @@ client.billing.estimate_charges.capture_stripe_estimate_charge(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="/lib/bridge_api/billing/estimate_charges/client.rb">refund_stripe_estimate_charge</a>(id:) -> Bridge_api::Billing::EstimateCharges::Types::EstimateChargeRefundStripeV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="/lib/BridgeApi/billing/estimate_charges/client.rb">refund_stripe_estimate_charge</a>(id:) -> BridgeApi::Billing::EstimateCharges::Types::EstimateChargeRefundStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -359,7 +359,7 @@ client.billing.estimate_charges.refund_stripe_estimate_charge(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::EstimateCharges::RequestOptions` 
+**request_options:** `BridgeApi::Billing::EstimateCharges::RequestOptions` 
     
 </dd>
 </dl>
@@ -371,7 +371,7 @@ client.billing.estimate_charges.refund_stripe_estimate_charge(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="/lib/bridge_api/billing/estimate_charges/client.rb">cancel_stripe_estimate_charge</a>(id:) -> Bridge_api::Billing::EstimateCharges::Types::EstimateChargeCancelStripeV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="/lib/BridgeApi/billing/estimate_charges/client.rb">cancel_stripe_estimate_charge</a>(id:) -> BridgeApi::Billing::EstimateCharges::Types::EstimateChargeCancelStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -428,7 +428,7 @@ client.billing.estimate_charges.cancel_stripe_estimate_charge(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::EstimateCharges::RequestOptions` 
+**request_options:** `BridgeApi::Billing::EstimateCharges::RequestOptions` 
     
 </dd>
 </dl>
@@ -441,7 +441,7 @@ client.billing.estimate_charges.cancel_stripe_estimate_charge(id: "id")
 </details>
 
 ## Billing Fees
-<details><summary><code>client.billing.fees.<a href="/lib/bridge_api/billing/fees/client.rb">list_fees</a>() -> Bridge_api::Billing::Fees::Types::FeesListV1Response</code></summary>
+<details><summary><code>client.billing.fees.<a href="/lib/BridgeApi/billing/fees/client.rb">list_fees</a>() -> BridgeApi::Billing::Fees::Types::FeesListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -501,7 +501,7 @@ client.billing.fees.list_fees
 <dl>
 <dd>
 
-**filter_status:** `Bridge_api::Billing::Fees::Types::FeesListV1FilterStatus` — should be JSON-encoded, for example filter.status="PENDING"
+**filter_status:** `BridgeApi::Billing::Fees::Types::FeesListV1FilterStatus` — should be JSON-encoded, for example filter.status="PENDING"
     
 </dd>
 </dl>
@@ -525,7 +525,7 @@ client.billing.fees.list_fees
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::Fees::RequestOptions` 
+**request_options:** `BridgeApi::Billing::Fees::RequestOptions` 
     
 </dd>
 </dl>
@@ -537,7 +537,7 @@ client.billing.fees.list_fees
 </dl>
 </details>
 
-<details><summary><code>client.billing.fees.<a href="/lib/bridge_api/billing/fees/client.rb">create_fee</a>(request) -> Bridge_api::Billing::Fees::Types::FeeCreateV1Response</code></summary>
+<details><summary><code>client.billing.fees.<a href="/lib/BridgeApi/billing/fees/client.rb">create_fee</a>(request) -> BridgeApi::Billing::Fees::Types::FeeCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -585,7 +585,7 @@ client.billing.fees.create_fee(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Billing::Fees::Types::FeeCreateV1Request` 
+**request:** `BridgeApi::Billing::Fees::Types::FeeCreateV1Request` 
     
 </dd>
 </dl>
@@ -593,7 +593,7 @@ client.billing.fees.create_fee(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::Fees::RequestOptions` 
+**request_options:** `BridgeApi::Billing::Fees::RequestOptions` 
     
 </dd>
 </dl>
@@ -605,7 +605,7 @@ client.billing.fees.create_fee(
 </dl>
 </details>
 
-<details><summary><code>client.billing.fees.<a href="/lib/bridge_api/billing/fees/client.rb">capture_stripe_fee</a>(id:) -> Bridge_api::Billing::Fees::Types::FeeCaptureStripeV1Response</code></summary>
+<details><summary><code>client.billing.fees.<a href="/lib/BridgeApi/billing/fees/client.rb">capture_stripe_fee</a>(id:) -> BridgeApi::Billing::Fees::Types::FeeCaptureStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -662,7 +662,7 @@ client.billing.fees.capture_stripe_fee(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::Fees::RequestOptions` 
+**request_options:** `BridgeApi::Billing::Fees::RequestOptions` 
     
 </dd>
 </dl>
@@ -674,7 +674,7 @@ client.billing.fees.capture_stripe_fee(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.billing.fees.<a href="/lib/bridge_api/billing/fees/client.rb">refund_stripe_fee</a>(id:) -> Bridge_api::Billing::Fees::Types::FeeRefundStripeV1Response</code></summary>
+<details><summary><code>client.billing.fees.<a href="/lib/BridgeApi/billing/fees/client.rb">refund_stripe_fee</a>(id:) -> BridgeApi::Billing::Fees::Types::FeeRefundStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -730,7 +730,7 @@ client.billing.fees.refund_stripe_fee(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::Fees::RequestOptions` 
+**request_options:** `BridgeApi::Billing::Fees::RequestOptions` 
     
 </dd>
 </dl>
@@ -743,7 +743,7 @@ client.billing.fees.refund_stripe_fee(id: "id")
 </details>
 
 ## Billing SetupIntent
-<details><summary><code>client.billing.setup_intent.<a href="/lib/bridge_api/billing/setup_intent/client.rb">create_stripe_setup_intent</a>(request) -> Bridge_api::Billing::SetupIntent::Types::SetupIntentCreateStripeV1Response</code></summary>
+<details><summary><code>client.billing.setup_intent.<a href="/lib/BridgeApi/billing/setup_intent/client.rb">create_stripe_setup_intent</a>(request) -> BridgeApi::Billing::SetupIntent::Types::SetupIntentCreateStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -785,7 +785,7 @@ client.billing.setup_intent.create_stripe_setup_intent(patient_id: "patientId")
 <dl>
 <dd>
 
-**request:** `Bridge_api::Billing::SetupIntent::Types::SetupIntentCreateStripeV1Request` 
+**request:** `BridgeApi::Billing::SetupIntent::Types::SetupIntentCreateStripeV1Request` 
     
 </dd>
 </dl>
@@ -793,7 +793,7 @@ client.billing.setup_intent.create_stripe_setup_intent(patient_id: "patientId")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Billing::SetupIntent::RequestOptions` 
+**request_options:** `BridgeApi::Billing::SetupIntent::RequestOptions` 
     
 </dd>
 </dl>
@@ -806,7 +806,7 @@ client.billing.setup_intent.create_stripe_setup_intent(patient_id: "patientId")
 </details>
 
 ## ConsentVersions
-<details><summary><code>client.consent_versions.<a href="/lib/bridge_api/consent_versions/client.rb">list_consent_versions</a>() -> Bridge_api::ConsentVersions::Types::ConsentVersionsListV1Response</code></summary>
+<details><summary><code>client.consent_versions.<a href="/lib/BridgeApi/consent_versions/client.rb">list_consent_versions</a>() -> BridgeApi::ConsentVersions::Types::ConsentVersionsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -850,7 +850,7 @@ client.consent_versions.list_consent_versions
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::ConsentVersions::RequestOptions` 
+**request_options:** `BridgeApi::ConsentVersions::RequestOptions` 
     
 </dd>
 </dl>
@@ -863,7 +863,7 @@ client.consent_versions.list_consent_versions
 </details>
 
 ## Consent
-<details><summary><code>client.consent.<a href="/lib/bridge_api/consent/client.rb">list_patient_consents</a>(id:) -> Bridge_api::Consent::Types::PatientConsentsListV1Response</code></summary>
+<details><summary><code>client.consent.<a href="/lib/BridgeApi/consent/client.rb">list_patient_consents</a>(id:) -> BridgeApi::Consent::Types::PatientConsentsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -915,7 +915,7 @@ client.consent.list_patient_consents(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Consent::RequestOptions` 
+**request_options:** `BridgeApi::Consent::RequestOptions` 
     
 </dd>
 </dl>
@@ -927,7 +927,7 @@ client.consent.list_patient_consents(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.consent.<a href="/lib/bridge_api/consent/client.rb">create_patient_consent</a>(id:, request) -> Bridge_api::Consent::Types::PatientConsentCreateV1Response</code></summary>
+<details><summary><code>client.consent.<a href="/lib/BridgeApi/consent/client.rb">create_patient_consent</a>(id:, request) -> BridgeApi::Consent::Types::PatientConsentCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -968,7 +968,7 @@ client.consent.create_patient_consent(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Consent::Types::PatientConsentCreateV1Request` 
+**request:** `BridgeApi::Consent::Types::PatientConsentCreateV1Request` 
     
 </dd>
 </dl>
@@ -976,7 +976,7 @@ client.consent.create_patient_consent(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Consent::RequestOptions` 
+**request_options:** `BridgeApi::Consent::RequestOptions` 
     
 </dd>
 </dl>
@@ -989,7 +989,7 @@ client.consent.create_patient_consent(
 </details>
 
 ## Events
-<details><summary><code>client.events.<a href="/lib/bridge_api/events/client.rb">list_events</a>() -> Bridge_api::Events::Types::EventsListV1Response</code></summary>
+<details><summary><code>client.events.<a href="/lib/BridgeApi/events/client.rb">list_events</a>() -> BridgeApi::Events::Types::EventsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1041,7 +1041,7 @@ client.events.list_events
 <dl>
 <dd>
 
-**order_created_at:** `Bridge_api::Events::Types::EventsListV1OrderCreatedAt` 
+**order_created_at:** `BridgeApi::Events::Types::EventsListV1OrderCreatedAt` 
     
 </dd>
 </dl>
@@ -1065,7 +1065,7 @@ client.events.list_events
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Events::RequestOptions` 
+**request_options:** `BridgeApi::Events::RequestOptions` 
     
 </dd>
 </dl>
@@ -1077,7 +1077,7 @@ client.events.list_events
 </dl>
 </details>
 
-<details><summary><code>client.events.<a href="/lib/bridge_api/events/client.rb">get_event</a>(id:) -> Bridge_api::Events::Types::EventGetV1Response</code></summary>
+<details><summary><code>client.events.<a href="/lib/BridgeApi/events/client.rb">get_event</a>(id:) -> BridgeApi::Events::Types::EventGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1113,7 +1113,7 @@ client.events.get_event(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Events::RequestOptions` 
+**request_options:** `BridgeApi::Events::RequestOptions` 
     
 </dd>
 </dl>
@@ -1126,7 +1126,7 @@ client.events.get_event(id: "id")
 </details>
 
 ## Notes
-<details><summary><code>client.notes.<a href="/lib/bridge_api/notes/client.rb">create_note</a>(request) -> Bridge_api::Notes::Types::NoteCreateV1Response</code></summary>
+<details><summary><code>client.notes.<a href="/lib/BridgeApi/notes/client.rb">create_note</a>(request) -> BridgeApi::Notes::Types::NoteCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1161,7 +1161,7 @@ client.notes.create_note(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Notes::Types::NoteCreateV1Request` 
+**request:** `BridgeApi::Notes::Types::NoteCreateV1Request` 
     
 </dd>
 </dl>
@@ -1169,7 +1169,7 @@ client.notes.create_note(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Notes::RequestOptions` 
+**request_options:** `BridgeApi::Notes::RequestOptions` 
     
 </dd>
 </dl>
@@ -1181,7 +1181,7 @@ client.notes.create_note(
 </dl>
 </details>
 
-<details><summary><code>client.notes.<a href="/lib/bridge_api/notes/client.rb">get_note</a>(id:) -> Bridge_api::Notes::Types::NoteGetV1Response</code></summary>
+<details><summary><code>client.notes.<a href="/lib/BridgeApi/notes/client.rb">get_note</a>(id:) -> BridgeApi::Notes::Types::NoteGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1217,7 +1217,7 @@ client.notes.get_note(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Notes::RequestOptions` 
+**request_options:** `BridgeApi::Notes::RequestOptions` 
     
 </dd>
 </dl>
@@ -1229,7 +1229,7 @@ client.notes.get_note(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.notes.<a href="/lib/bridge_api/notes/client.rb">list_note_addenda</a>(id:) -> Bridge_api::Notes::Types::NoteAddendaListV1Response</code></summary>
+<details><summary><code>client.notes.<a href="/lib/BridgeApi/notes/client.rb">list_note_addenda</a>(id:) -> BridgeApi::Notes::Types::NoteAddendaListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1273,7 +1273,7 @@ client.notes.list_note_addenda(id: "id")
 <dl>
 <dd>
 
-**order_created_at:** `Bridge_api::Notes::Types::NoteAddendaListV1OrderCreatedAt` 
+**order_created_at:** `BridgeApi::Notes::Types::NoteAddendaListV1OrderCreatedAt` 
     
 </dd>
 </dl>
@@ -1297,7 +1297,7 @@ client.notes.list_note_addenda(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Notes::RequestOptions` 
+**request_options:** `BridgeApi::Notes::RequestOptions` 
     
 </dd>
 </dl>
@@ -1309,7 +1309,7 @@ client.notes.list_note_addenda(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.notes.<a href="/lib/bridge_api/notes/client.rb">create_note_addendum</a>(id:, request) -> Bridge_api::Notes::Types::NoteAddendumCreateV1Response</code></summary>
+<details><summary><code>client.notes.<a href="/lib/BridgeApi/notes/client.rb">create_note_addendum</a>(id:, request) -> BridgeApi::Notes::Types::NoteAddendumCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1352,7 +1352,7 @@ client.notes.create_note_addendum(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Notes::Types::NoteAddendumCreateV1Request` 
+**request:** `BridgeApi::Notes::Types::NoteAddendumCreateV1Request` 
     
 </dd>
 </dl>
@@ -1360,7 +1360,7 @@ client.notes.create_note_addendum(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Notes::RequestOptions` 
+**request_options:** `BridgeApi::Notes::RequestOptions` 
     
 </dd>
 </dl>
@@ -1373,7 +1373,7 @@ client.notes.create_note_addendum(
 </details>
 
 ## PatientToken
-<details><summary><code>client.patient_token.<a href="/lib/bridge_api/patient_token/client.rb">create_patient_token</a>(request) -> Bridge_api::PatientToken::Types::PatientTokenCreateV1Response</code></summary>
+<details><summary><code>client.patient_token.<a href="/lib/BridgeApi/patient_token/client.rb">create_patient_token</a>(request) -> BridgeApi::PatientToken::Types::PatientTokenCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1401,7 +1401,7 @@ client.patient_token.create_patient_token(patient_id: "patientId")
 <dl>
 <dd>
 
-**request:** `Bridge_api::PatientToken::Types::PatientTokenCreateV1Request` 
+**request:** `BridgeApi::PatientToken::Types::PatientTokenCreateV1Request` 
     
 </dd>
 </dl>
@@ -1409,7 +1409,7 @@ client.patient_token.create_patient_token(patient_id: "patientId")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::PatientToken::RequestOptions` 
+**request_options:** `BridgeApi::PatientToken::RequestOptions` 
     
 </dd>
 </dl>
@@ -1422,7 +1422,7 @@ client.patient_token.create_patient_token(patient_id: "patientId")
 </details>
 
 ## Patients
-<details><summary><code>client.patients.<a href="/lib/bridge_api/patients/client.rb">stream_patient</a>(id:) -> Bridge_api::Patients::Types::PatientStreamV1Response</code></summary>
+<details><summary><code>client.patients.<a href="/lib/BridgeApi/patients/client.rb">stream_patient</a>(id:) -> BridgeApi::Patients::Types::PatientStreamV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1458,7 +1458,7 @@ client.patients.stream_patient(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Patients::RequestOptions` 
+**request_options:** `BridgeApi::Patients::RequestOptions` 
     
 </dd>
 </dl>
@@ -1470,7 +1470,7 @@ client.patients.stream_patient(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.patients.<a href="/lib/bridge_api/patients/client.rb">list_patients</a>() -> Bridge_api::Patients::Types::PatientsListV1Response</code></summary>
+<details><summary><code>client.patients.<a href="/lib/BridgeApi/patients/client.rb">list_patients</a>() -> BridgeApi::Patients::Types::PatientsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1514,7 +1514,7 @@ client.patients.list_patients
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Patients::RequestOptions` 
+**request_options:** `BridgeApi::Patients::RequestOptions` 
     
 </dd>
 </dl>
@@ -1526,7 +1526,7 @@ client.patients.list_patients
 </dl>
 </details>
 
-<details><summary><code>client.patients.<a href="/lib/bridge_api/patients/client.rb">update_patient</a>(id:, request) -> Bridge_api::Patients::Types::PatientUpdateV1Response</code></summary>
+<details><summary><code>client.patients.<a href="/lib/BridgeApi/patients/client.rb">update_patient</a>(id:, request) -> BridgeApi::Patients::Types::PatientUpdateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1562,7 +1562,7 @@ client.patients.update_patient(id: "id")
 <dl>
 <dd>
 
-**request:** `Bridge_api::Patients::Types::PatientUpdateV1Request` 
+**request:** `BridgeApi::Patients::Types::PatientUpdateV1Request` 
     
 </dd>
 </dl>
@@ -1570,7 +1570,7 @@ client.patients.update_patient(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Patients::RequestOptions` 
+**request_options:** `BridgeApi::Patients::RequestOptions` 
     
 </dd>
 </dl>
@@ -1582,7 +1582,7 @@ client.patients.update_patient(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.patients.<a href="/lib/bridge_api/patients/client.rb">revalidate_patient</a>(id:) -> </code></summary>
+<details><summary><code>client.patients.<a href="/lib/BridgeApi/patients/client.rb">revalidate_patient</a>(id:) -> </code></summary>
 <dl>
 <dd>
 
@@ -1618,7 +1618,7 @@ client.patients.revalidate_patient(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Patients::RequestOptions` 
+**request_options:** `BridgeApi::Patients::RequestOptions` 
     
 </dd>
 </dl>
@@ -1631,7 +1631,7 @@ client.patients.revalidate_patient(id: "id")
 </details>
 
 ## Patients V2
-<details><summary><code>client.patients.v_2.<a href="/lib/bridge_api/patients/v_2/client.rb">create_patient</a>(request) -> Bridge_api::Patients::V2::Types::PatientCreateV2Response</code></summary>
+<details><summary><code>client.patients.v_2.<a href="/lib/BridgeApi/patients/v_2/client.rb">create_patient</a>(request) -> BridgeApi::Patients::V2::Types::PatientCreateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -1664,7 +1664,7 @@ client.patients.v_2.create_patient(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Patients::V2::Types::PatientCreateV2Request` 
+**request:** `BridgeApi::Patients::V2::Types::PatientCreateV2Request` 
     
 </dd>
 </dl>
@@ -1672,7 +1672,7 @@ client.patients.v_2.create_patient(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Patients::V2::RequestOptions` 
+**request_options:** `BridgeApi::Patients::V2::RequestOptions` 
     
 </dd>
 </dl>
@@ -1684,7 +1684,7 @@ client.patients.v_2.create_patient(
 </dl>
 </details>
 
-<details><summary><code>client.patients.v_2.<a href="/lib/bridge_api/patients/v_2/client.rb">get_patient</a>(id:) -> Bridge_api::Patients::V2::Types::PatientGetV2Response</code></summary>
+<details><summary><code>client.patients.v_2.<a href="/lib/BridgeApi/patients/v_2/client.rb">get_patient</a>(id:) -> BridgeApi::Patients::V2::Types::PatientGetV2Response</code></summary>
 <dl>
 <dd>
 
@@ -1734,7 +1734,7 @@ client.patients.v_2.get_patient(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Patients::V2::RequestOptions` 
+**request_options:** `BridgeApi::Patients::V2::RequestOptions` 
     
 </dd>
 </dl>
@@ -1747,7 +1747,7 @@ client.patients.v_2.get_patient(id: "id")
 </details>
 
 ## PayerGroups
-<details><summary><code>client.payer_groups.<a href="/lib/bridge_api/payer_groups/client.rb">list_payer_groups</a>() -> Bridge_api::PayerGroups::Types::PayerGroupsListV1Response</code></summary>
+<details><summary><code>client.payer_groups.<a href="/lib/BridgeApi/payer_groups/client.rb">list_payer_groups</a>() -> BridgeApi::PayerGroups::Types::PayerGroupsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1791,7 +1791,7 @@ client.payer_groups.list_payer_groups
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::PayerGroups::RequestOptions` 
+**request_options:** `BridgeApi::PayerGroups::RequestOptions` 
     
 </dd>
 </dl>
@@ -1803,7 +1803,7 @@ client.payer_groups.list_payer_groups
 </dl>
 </details>
 
-<details><summary><code>client.payer_groups.<a href="/lib/bridge_api/payer_groups/client.rb">get_payer_group</a>(id:) -> Bridge_api::PayerGroups::Types::PayerGroupGetV1Response</code></summary>
+<details><summary><code>client.payer_groups.<a href="/lib/BridgeApi/payer_groups/client.rb">get_payer_group</a>(id:) -> BridgeApi::PayerGroups::Types::PayerGroupGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1839,7 +1839,7 @@ client.payer_groups.get_payer_group(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::PayerGroups::RequestOptions` 
+**request_options:** `BridgeApi::PayerGroups::RequestOptions` 
     
 </dd>
 </dl>
@@ -1852,7 +1852,7 @@ client.payer_groups.get_payer_group(id: "id")
 </details>
 
 ## PayerGroups Health
-<details><summary><code>client.payer_groups.health.<a href="/lib/bridge_api/payer_groups/health/client.rb">list_health_events</a>(id:) -> Bridge_api::PayerGroups::Health::Types::HealthEventsListV1Response</code></summary>
+<details><summary><code>client.payer_groups.health.<a href="/lib/BridgeApi/payer_groups/health/client.rb">list_health_events</a>(id:) -> BridgeApi::PayerGroups::Health::Types::HealthEventsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1888,7 +1888,7 @@ client.payer_groups.health.list_health_events(id: "id")
 <dl>
 <dd>
 
-**order_event_at:** `Bridge_api::PayerGroups::Health::Types::HealthEventsListV1OrderEventAt` 
+**order_event_at:** `BridgeApi::PayerGroups::Health::Types::HealthEventsListV1OrderEventAt` 
     
 </dd>
 </dl>
@@ -1912,7 +1912,7 @@ client.payer_groups.health.list_health_events(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::PayerGroups::Health::RequestOptions` 
+**request_options:** `BridgeApi::PayerGroups::Health::RequestOptions` 
     
 </dd>
 </dl>
@@ -1925,7 +1925,7 @@ client.payer_groups.health.list_health_events(id: "id")
 </details>
 
 ## Payers
-<details><summary><code>client.payers.<a href="/lib/bridge_api/payers/client.rb">get_payer</a>(id:) -> Bridge_api::Payers::Types::PayerGetV1Response</code></summary>
+<details><summary><code>client.payers.<a href="/lib/BridgeApi/payers/client.rb">get_payer</a>(id:) -> BridgeApi::Payers::Types::PayerGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1961,7 +1961,7 @@ client.payers.get_payer(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Payers::RequestOptions` 
+**request_options:** `BridgeApi::Payers::RequestOptions` 
     
 </dd>
 </dl>
@@ -1974,7 +1974,7 @@ client.payers.get_payer(id: "id")
 </details>
 
 ## Payments
-<details><summary><code>client.payments.<a href="/lib/bridge_api/payments/client.rb">list_payments</a>() -> Bridge_api::Payments::Types::PaymentsListV1Response</code></summary>
+<details><summary><code>client.payments.<a href="/lib/BridgeApi/payments/client.rb">list_payments</a>() -> BridgeApi::Payments::Types::PaymentsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2018,7 +2018,7 @@ client.payments.list_payments
 <dl>
 <dd>
 
-**filter_type:** `Bridge_api::Payments::Types::PaymentsListV1FilterType` — Values should be JSON-encoded, for example filter.type="PATIENT"
+**filter_type:** `BridgeApi::Payments::Types::PaymentsListV1FilterType` — Values should be JSON-encoded, for example filter.type="PATIENT"
     
 </dd>
 </dl>
@@ -2026,7 +2026,7 @@ client.payments.list_payments
 <dl>
 <dd>
 
-**order_paid_at:** `Bridge_api::Payments::Types::PaymentsListV1OrderPaidAt` 
+**order_paid_at:** `BridgeApi::Payments::Types::PaymentsListV1OrderPaidAt` 
     
 </dd>
 </dl>
@@ -2050,7 +2050,7 @@ client.payments.list_payments
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Payments::RequestOptions` 
+**request_options:** `BridgeApi::Payments::RequestOptions` 
     
 </dd>
 </dl>
@@ -2062,7 +2062,7 @@ client.payments.list_payments
 </dl>
 </details>
 
-<details><summary><code>client.payments.<a href="/lib/bridge_api/payments/client.rb">create_payment</a>(request) -> Bridge_api::Payments::Types::PaymentCreateV1Response</code></summary>
+<details><summary><code>client.payments.<a href="/lib/BridgeApi/payments/client.rb">create_payment</a>(request) -> BridgeApi::Payments::Types::PaymentCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2096,7 +2096,7 @@ client.payments.create_payment(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Payments::Types::PaymentCreateV1Request` 
+**request:** `BridgeApi::Payments::Types::PaymentCreateV1Request` 
     
 </dd>
 </dl>
@@ -2104,7 +2104,7 @@ client.payments.create_payment(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Payments::RequestOptions` 
+**request_options:** `BridgeApi::Payments::RequestOptions` 
     
 </dd>
 </dl>
@@ -2116,7 +2116,7 @@ client.payments.create_payment(
 </dl>
 </details>
 
-<details><summary><code>client.payments.<a href="/lib/bridge_api/payments/client.rb">get_payment</a>(id:) -> Bridge_api::Payments::Types::PaymentGetV1Response</code></summary>
+<details><summary><code>client.payments.<a href="/lib/BridgeApi/payments/client.rb">get_payment</a>(id:) -> BridgeApi::Payments::Types::PaymentGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2152,7 +2152,7 @@ client.payments.get_payment(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Payments::RequestOptions` 
+**request_options:** `BridgeApi::Payments::RequestOptions` 
     
 </dd>
 </dl>
@@ -2165,7 +2165,7 @@ client.payments.get_payment(id: "id")
 </details>
 
 ## Policies
-<details><summary><code>client.policies.<a href="/lib/bridge_api/policies/client.rb">get_policy</a>(id:) -> Bridge_api::Policies::Types::PolicyGetV1Response</code></summary>
+<details><summary><code>client.policies.<a href="/lib/BridgeApi/policies/client.rb">get_policy</a>(id:) -> BridgeApi::Policies::Types::PolicyGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2201,7 +2201,7 @@ client.policies.get_policy(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Policies::RequestOptions` 
+**request_options:** `BridgeApi::Policies::RequestOptions` 
     
 </dd>
 </dl>
@@ -2213,7 +2213,7 @@ client.policies.get_policy(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.policies.<a href="/lib/bridge_api/policies/client.rb">revalidate_policy</a>(id:) -> </code></summary>
+<details><summary><code>client.policies.<a href="/lib/BridgeApi/policies/client.rb">revalidate_policy</a>(id:) -> </code></summary>
 <dl>
 <dd>
 
@@ -2249,7 +2249,7 @@ client.policies.revalidate_policy(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Policies::RequestOptions` 
+**request_options:** `BridgeApi::Policies::RequestOptions` 
     
 </dd>
 </dl>
@@ -2261,7 +2261,7 @@ client.policies.revalidate_policy(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.policies.<a href="/lib/bridge_api/policies/client.rb">stream_policy</a>(id:) -> Bridge_api::Policies::Types::PolicyStreamV1Response</code></summary>
+<details><summary><code>client.policies.<a href="/lib/BridgeApi/policies/client.rb">stream_policy</a>(id:) -> BridgeApi::Policies::Types::PolicyStreamV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2297,7 +2297,7 @@ client.policies.stream_policy(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Policies::RequestOptions` 
+**request_options:** `BridgeApi::Policies::RequestOptions` 
     
 </dd>
 </dl>
@@ -2310,7 +2310,7 @@ client.policies.stream_policy(id: "id")
 </details>
 
 ## Policies V2
-<details><summary><code>client.policies.v_2.<a href="/lib/bridge_api/policies/v_2/client.rb">create_policy</a>(request) -> Bridge_api::Policies::V2::Types::PolicyCreateV2Response</code></summary>
+<details><summary><code>client.policies.v_2.<a href="/lib/BridgeApi/policies/v_2/client.rb">create_policy</a>(request) -> BridgeApi::Policies::V2::Types::PolicyCreateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -2360,7 +2360,7 @@ client.policies.v_2.create_policy(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Policies::V2::Types::PolicyCreateV2Request` 
+**request:** `BridgeApi::Policies::V2::Types::PolicyCreateV2Request` 
     
 </dd>
 </dl>
@@ -2368,7 +2368,7 @@ client.policies.v_2.create_policy(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Policies::V2::RequestOptions` 
+**request_options:** `BridgeApi::Policies::V2::RequestOptions` 
     
 </dd>
 </dl>
@@ -2381,7 +2381,7 @@ client.policies.v_2.create_policy(
 </details>
 
 ## ProviderEligibility
-<details><summary><code>client.provider_eligibility.<a href="/lib/bridge_api/provider_eligibility/client.rb">create_provider_eligibility</a>(request) -> Bridge_api::ProviderEligibility::Types::ProviderEligibilityCreateV1Response</code></summary>
+<details><summary><code>client.provider_eligibility.<a href="/lib/BridgeApi/provider_eligibility/client.rb">create_provider_eligibility</a>(request) -> BridgeApi::ProviderEligibility::Types::ProviderEligibilityCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2416,7 +2416,7 @@ client.provider_eligibility.create_provider_eligibility(
 <dl>
 <dd>
 
-**request:** `Bridge_api::ProviderEligibility::Types::ProviderEligibilityCreateV1Request` 
+**request:** `BridgeApi::ProviderEligibility::Types::ProviderEligibilityCreateV1Request` 
     
 </dd>
 </dl>
@@ -2424,7 +2424,7 @@ client.provider_eligibility.create_provider_eligibility(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::ProviderEligibility::RequestOptions` 
+**request_options:** `BridgeApi::ProviderEligibility::RequestOptions` 
     
 </dd>
 </dl>
@@ -2436,7 +2436,7 @@ client.provider_eligibility.create_provider_eligibility(
 </dl>
 </details>
 
-<details><summary><code>client.provider_eligibility.<a href="/lib/bridge_api/provider_eligibility/client.rb">get_provider_eligibility</a>(id:) -> Bridge_api::ProviderEligibility::Types::ProviderEligibilityGetV1Response</code></summary>
+<details><summary><code>client.provider_eligibility.<a href="/lib/BridgeApi/provider_eligibility/client.rb">get_provider_eligibility</a>(id:) -> BridgeApi::ProviderEligibility::Types::ProviderEligibilityGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2472,7 +2472,7 @@ client.provider_eligibility.get_provider_eligibility(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::ProviderEligibility::RequestOptions` 
+**request_options:** `BridgeApi::ProviderEligibility::RequestOptions` 
     
 </dd>
 </dl>
@@ -2485,7 +2485,7 @@ client.provider_eligibility.get_provider_eligibility(id: "id")
 </details>
 
 ## Providers
-<details><summary><code>client.providers.<a href="/lib/bridge_api/providers/client.rb">submit_providers</a>(request) -> Bridge_api::Providers::Types::ProviderPostV1Response</code></summary>
+<details><summary><code>client.providers.<a href="/lib/BridgeApi/providers/client.rb">submit_providers</a>(request) -> BridgeApi::Providers::Types::ProviderPostV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2539,7 +2539,7 @@ client.providers.submit_providers(providers: [{
 <dl>
 <dd>
 
-**request:** `Bridge_api::Providers::Types::ProviderPostV1Request` 
+**request:** `BridgeApi::Providers::Types::ProviderPostV1Request` 
     
 </dd>
 </dl>
@@ -2547,7 +2547,7 @@ client.providers.submit_providers(providers: [{
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Providers::RequestOptions` 
+**request_options:** `BridgeApi::Providers::RequestOptions` 
     
 </dd>
 </dl>
@@ -2559,7 +2559,7 @@ client.providers.submit_providers(providers: [{
 </dl>
 </details>
 
-<details><summary><code>client.providers.<a href="/lib/bridge_api/providers/client.rb">list_providers</a>() -> Bridge_api::Providers::Types::ProvidersListV1Response</code></summary>
+<details><summary><code>client.providers.<a href="/lib/BridgeApi/providers/client.rb">list_providers</a>() -> BridgeApi::Providers::Types::ProvidersListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2611,7 +2611,7 @@ client.providers.list_providers
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Providers::RequestOptions` 
+**request_options:** `BridgeApi::Providers::RequestOptions` 
     
 </dd>
 </dl>
@@ -2623,7 +2623,7 @@ client.providers.list_providers
 </dl>
 </details>
 
-<details><summary><code>client.providers.<a href="/lib/bridge_api/providers/client.rb">get_provider</a>(id:) -> Bridge_api::Providers::Types::ProviderGetV1Response</code></summary>
+<details><summary><code>client.providers.<a href="/lib/BridgeApi/providers/client.rb">get_provider</a>(id:) -> BridgeApi::Providers::Types::ProviderGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2659,7 +2659,7 @@ client.providers.get_provider(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Providers::RequestOptions` 
+**request_options:** `BridgeApi::Providers::RequestOptions` 
     
 </dd>
 </dl>
@@ -2671,7 +2671,7 @@ client.providers.get_provider(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.providers.<a href="/lib/bridge_api/providers/client.rb">update_provider</a>(id:, request) -> Bridge_api::Providers::Types::ProviderUpdateV1Response</code></summary>
+<details><summary><code>client.providers.<a href="/lib/BridgeApi/providers/client.rb">update_provider</a>(id:, request) -> BridgeApi::Providers::Types::ProviderUpdateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2707,7 +2707,7 @@ client.providers.update_provider(id: "id")
 <dl>
 <dd>
 
-**request:** `Bridge_api::Providers::Types::ProviderUpdateV1Request` 
+**request:** `BridgeApi::Providers::Types::ProviderUpdateV1Request` 
     
 </dd>
 </dl>
@@ -2715,7 +2715,7 @@ client.providers.update_provider(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Providers::RequestOptions` 
+**request_options:** `BridgeApi::Providers::RequestOptions` 
     
 </dd>
 </dl>
@@ -2728,7 +2728,7 @@ client.providers.update_provider(id: "id")
 </details>
 
 ## Providers Enrollment
-<details><summary><code>client.providers.enrollment.<a href="/lib/bridge_api/providers/enrollment/client.rb">get_provider_enrollment_status</a>(id:) -> Bridge_api::Providers::Enrollment::Types::ProviderEnrollmentStatusGetV1Response</code></summary>
+<details><summary><code>client.providers.enrollment.<a href="/lib/BridgeApi/providers/enrollment/client.rb">get_provider_enrollment_status</a>(id:) -> BridgeApi::Providers::Enrollment::Types::ProviderEnrollmentStatusGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2780,7 +2780,7 @@ client.providers.enrollment.get_provider_enrollment_status(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Providers::Enrollment::RequestOptions` 
+**request_options:** `BridgeApi::Providers::Enrollment::RequestOptions` 
     
 </dd>
 </dl>
@@ -2793,7 +2793,7 @@ client.providers.enrollment.get_provider_enrollment_status(id: "id")
 </details>
 
 ## Search
-<details><summary><code>client.search.<a href="/lib/bridge_api/search/client.rb">payer_search</a>(request) -> Bridge_api::Search::Types::SearchPayerV1Response</code></summary>
+<details><summary><code>client.search.<a href="/lib/BridgeApi/search/client.rb">payer_search</a>(request) -> BridgeApi::Search::Types::SearchPayerV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2824,7 +2824,7 @@ client.search.payer_search(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Search::Types::SearchPayerV1Request` 
+**request:** `BridgeApi::Search::Types::SearchPayerV1Request` 
     
 </dd>
 </dl>
@@ -2832,7 +2832,7 @@ client.search.payer_search(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Search::RequestOptions` 
+**request_options:** `BridgeApi::Search::RequestOptions` 
     
 </dd>
 </dl>
@@ -2845,7 +2845,7 @@ client.search.payer_search(
 </details>
 
 ## ServiceEligibility
-<details><summary><code>client.service_eligibility.<a href="/lib/bridge_api/service_eligibility/client.rb">stream_service_eligibility</a>(id:) -> Bridge_api::ServiceEligibility::Types::ServiceEligibilityStreamV1Response</code></summary>
+<details><summary><code>client.service_eligibility.<a href="/lib/BridgeApi/service_eligibility/client.rb">stream_service_eligibility</a>(id:) -> BridgeApi::ServiceEligibility::Types::ServiceEligibilityStreamV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2881,7 +2881,7 @@ client.service_eligibility.stream_service_eligibility(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::ServiceEligibility::RequestOptions` 
+**request_options:** `BridgeApi::ServiceEligibility::RequestOptions` 
     
 </dd>
 </dl>
@@ -2893,7 +2893,7 @@ client.service_eligibility.stream_service_eligibility(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.service_eligibility.<a href="/lib/bridge_api/service_eligibility/client.rb">get_service_eligibility</a>(id:) -> Bridge_api::ServiceEligibility::Types::ServiceEligibilityGetV1Response</code></summary>
+<details><summary><code>client.service_eligibility.<a href="/lib/BridgeApi/service_eligibility/client.rb">get_service_eligibility</a>(id:) -> BridgeApi::ServiceEligibility::Types::ServiceEligibilityGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2929,7 +2929,7 @@ client.service_eligibility.get_service_eligibility(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::ServiceEligibility::RequestOptions` 
+**request_options:** `BridgeApi::ServiceEligibility::RequestOptions` 
     
 </dd>
 </dl>
@@ -2942,7 +2942,7 @@ client.service_eligibility.get_service_eligibility(id: "id")
 </details>
 
 ## ServiceEligibility V2
-<details><summary><code>client.service_eligibility.v_2.<a href="/lib/bridge_api/service_eligibility/v_2/client.rb">create_service_eligibility</a>(request) -> Bridge_api::ServiceEligibility::V2::Types::ServiceEligibilityCreateV2Response</code></summary>
+<details><summary><code>client.service_eligibility.v_2.<a href="/lib/BridgeApi/service_eligibility/v_2/client.rb">create_service_eligibility</a>(request) -> BridgeApi::ServiceEligibility::V2::Types::ServiceEligibilityCreateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -2988,7 +2988,7 @@ client.service_eligibility.v_2.create_service_eligibility(
 <dl>
 <dd>
 
-**request:** `Bridge_api::ServiceEligibility::V2::Types::ServiceEligibilityCreateV2Request` 
+**request:** `BridgeApi::ServiceEligibility::V2::Types::ServiceEligibilityCreateV2Request` 
     
 </dd>
 </dl>
@@ -2996,7 +2996,7 @@ client.service_eligibility.v_2.create_service_eligibility(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::ServiceEligibility::V2::RequestOptions` 
+**request_options:** `BridgeApi::ServiceEligibility::V2::RequestOptions` 
     
 </dd>
 </dl>
@@ -3009,7 +3009,7 @@ client.service_eligibility.v_2.create_service_eligibility(
 </details>
 
 ## ServiceTypes
-<details><summary><code>client.service_types.<a href="/lib/bridge_api/service_types/client.rb">list_service_types</a>() -> Bridge_api::ServiceTypes::Types::ServiceTypesListV1Response</code></summary>
+<details><summary><code>client.service_types.<a href="/lib/BridgeApi/service_types/client.rb">list_service_types</a>() -> BridgeApi::ServiceTypes::Types::ServiceTypesListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3053,7 +3053,7 @@ client.service_types.list_service_types
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::ServiceTypes::RequestOptions` 
+**request_options:** `BridgeApi::ServiceTypes::RequestOptions` 
     
 </dd>
 </dl>
@@ -3065,7 +3065,7 @@ client.service_types.list_service_types
 </dl>
 </details>
 
-<details><summary><code>client.service_types.<a href="/lib/bridge_api/service_types/client.rb">get_service_type</a>(id:) -> Bridge_api::ServiceTypes::Types::ServiceTypeGetV1Response</code></summary>
+<details><summary><code>client.service_types.<a href="/lib/BridgeApi/service_types/client.rb">get_service_type</a>(id:) -> BridgeApi::ServiceTypes::Types::ServiceTypeGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3101,7 +3101,7 @@ client.service_types.get_service_type(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::ServiceTypes::RequestOptions` 
+**request_options:** `BridgeApi::ServiceTypes::RequestOptions` 
     
 </dd>
 </dl>
@@ -3114,7 +3114,7 @@ client.service_types.get_service_type(id: "id")
 </details>
 
 ## Services
-<details><summary><code>client.services.<a href="/lib/bridge_api/services/client.rb">stream_service</a>(id:) -> Bridge_api::Services::Types::ServiceStreamV1Response</code></summary>
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">stream_service</a>(id:) -> BridgeApi::Services::Types::ServiceStreamV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3150,7 +3150,7 @@ client.services.stream_service(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::RequestOptions` 
+**request_options:** `BridgeApi::Services::RequestOptions` 
     
 </dd>
 </dl>
@@ -3162,7 +3162,7 @@ client.services.stream_service(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="/lib/bridge_api/services/client.rb">list_services</a>() -> Bridge_api::Services::Types::ServicesListV1Response</code></summary>
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">list_services</a>() -> BridgeApi::Services::Types::ServicesListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3206,7 +3206,7 @@ client.services.list_services
 <dl>
 <dd>
 
-**filter_status:** `Internal::Types::Array[Bridge_api::Services::Types::ServicesListV1FilterStatusElement]` — should be a JSON-encoded array, for example filter.status=["PENDING", "COMPLETE"]
+**filter_status:** `Internal::Types::Array[BridgeApi::Services::Types::ServicesListV1FilterStatusElement]` — should be a JSON-encoded array, for example filter.status=["PENDING", "COMPLETE"]
     
 </dd>
 </dl>
@@ -3222,7 +3222,7 @@ client.services.list_services
 <dl>
 <dd>
 
-**order_created_at:** `Bridge_api::Services::Types::ServicesListV1OrderCreatedAt` 
+**order_created_at:** `BridgeApi::Services::Types::ServicesListV1OrderCreatedAt` 
     
 </dd>
 </dl>
@@ -3230,7 +3230,7 @@ client.services.list_services
 <dl>
 <dd>
 
-**order_date_of_service:** `Bridge_api::Services::Types::ServicesListV1OrderDateOfService` 
+**order_date_of_service:** `BridgeApi::Services::Types::ServicesListV1OrderDateOfService` 
     
 </dd>
 </dl>
@@ -3254,7 +3254,7 @@ client.services.list_services
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::RequestOptions` 
+**request_options:** `BridgeApi::Services::RequestOptions` 
     
 </dd>
 </dl>
@@ -3266,7 +3266,7 @@ client.services.list_services
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="/lib/bridge_api/services/client.rb">create_service</a>(request) -> Bridge_api::Services::Types::ServiceCreateV1Response</code></summary>
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">create_service</a>(request) -> BridgeApi::Services::Types::ServiceCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3302,7 +3302,7 @@ client.services.create_service(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Services::Types::ServiceCreateV1Request` 
+**request:** `BridgeApi::Services::Types::ServiceCreateV1Request` 
     
 </dd>
 </dl>
@@ -3310,7 +3310,7 @@ client.services.create_service(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::RequestOptions` 
+**request_options:** `BridgeApi::Services::RequestOptions` 
     
 </dd>
 </dl>
@@ -3322,7 +3322,7 @@ client.services.create_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="/lib/bridge_api/services/client.rb">get_service</a>(id:) -> Bridge_api::Services::Types::ServiceGetV1Response</code></summary>
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">get_service</a>(id:) -> BridgeApi::Services::Types::ServiceGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3372,7 +3372,7 @@ client.services.get_service(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::RequestOptions` 
+**request_options:** `BridgeApi::Services::RequestOptions` 
     
 </dd>
 </dl>
@@ -3384,7 +3384,7 @@ client.services.get_service(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="/lib/bridge_api/services/client.rb">revalidate_service</a>(id:) -> </code></summary>
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">revalidate_service</a>(id:) -> </code></summary>
 <dl>
 <dd>
 
@@ -3420,7 +3420,7 @@ client.services.revalidate_service(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::RequestOptions` 
+**request_options:** `BridgeApi::Services::RequestOptions` 
     
 </dd>
 </dl>
@@ -3432,7 +3432,7 @@ client.services.revalidate_service(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="/lib/bridge_api/services/client.rb">bill_service</a>(id:) -> </code></summary>
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">bill_service</a>(id:) -> </code></summary>
 <dl>
 <dd>
 
@@ -3468,7 +3468,7 @@ client.services.bill_service(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::RequestOptions` 
+**request_options:** `BridgeApi::Services::RequestOptions` 
     
 </dd>
 </dl>
@@ -3480,7 +3480,7 @@ client.services.bill_service(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="/lib/bridge_api/services/client.rb">get_service_note</a>(id:) -> Bridge_api::Services::Types::ServiceNoteGetV1Response</code></summary>
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">get_service_note</a>(id:) -> BridgeApi::Services::Types::ServiceNoteGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3516,7 +3516,7 @@ client.services.get_service_note(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::RequestOptions` 
+**request_options:** `BridgeApi::Services::RequestOptions` 
     
 </dd>
 </dl>
@@ -3528,7 +3528,7 @@ client.services.get_service_note(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="/lib/bridge_api/services/client.rb">delete_service_note</a>(id:) -> </code></summary>
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">delete_service_note</a>(id:) -> </code></summary>
 <dl>
 <dd>
 
@@ -3564,7 +3564,7 @@ client.services.delete_service_note(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::RequestOptions` 
+**request_options:** `BridgeApi::Services::RequestOptions` 
     
 </dd>
 </dl>
@@ -3577,7 +3577,7 @@ client.services.delete_service_note(id: "id")
 </details>
 
 ## Services Payments
-<details><summary><code>client.services.payments.<a href="/lib/bridge_api/services/payments/client.rb">list_service_payments</a>(id:) -> Bridge_api::Services::Payments::Types::ServicePaymentsListV1Response</code></summary>
+<details><summary><code>client.services.payments.<a href="/lib/BridgeApi/services/payments/client.rb">list_service_payments</a>(id:) -> BridgeApi::Services::Payments::Types::ServicePaymentsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3629,7 +3629,7 @@ client.services.payments.list_service_payments(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::Payments::RequestOptions` 
+**request_options:** `BridgeApi::Services::Payments::RequestOptions` 
     
 </dd>
 </dl>
@@ -3642,7 +3642,7 @@ client.services.payments.list_service_payments(id: "id")
 </details>
 
 ## Services V2
-<details><summary><code>client.services.v_2.<a href="/lib/bridge_api/services/v_2/client.rb">create_service</a>(request) -> Bridge_api::Services::V2::Types::ServiceCreateV2Response</code></summary>
+<details><summary><code>client.services.v_2.<a href="/lib/BridgeApi/services/v_2/client.rb">create_service</a>(request) -> BridgeApi::Services::V2::Types::ServiceCreateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -3692,7 +3692,7 @@ client.services.v_2.create_service(
 <dl>
 <dd>
 
-**request:** `Bridge_api::Services::V2::Types::ServiceCreateV2Request` 
+**request:** `BridgeApi::Services::V2::Types::ServiceCreateV2Request` 
     
 </dd>
 </dl>
@@ -3700,7 +3700,7 @@ client.services.v_2.create_service(
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::V2::RequestOptions` 
+**request_options:** `BridgeApi::Services::V2::RequestOptions` 
     
 </dd>
 </dl>
@@ -3712,7 +3712,7 @@ client.services.v_2.create_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.v_2.<a href="/lib/bridge_api/services/v_2/client.rb">cancel_service</a>(id:, request) -> Bridge_api::Services::V2::Types::ServiceCancelV2Response</code></summary>
+<details><summary><code>client.services.v_2.<a href="/lib/BridgeApi/services/v_2/client.rb">cancel_service</a>(id:, request) -> BridgeApi::Services::V2::Types::ServiceCancelV2Response</code></summary>
 <dl>
 <dd>
 
@@ -3748,7 +3748,7 @@ client.services.v_2.cancel_service(id: "id")
 <dl>
 <dd>
 
-**request:** `Bridge_api::Services::V2::Types::ServiceCancelV2Request` 
+**request:** `BridgeApi::Services::V2::Types::ServiceCancelV2Request` 
     
 </dd>
 </dl>
@@ -3756,7 +3756,7 @@ client.services.v_2.cancel_service(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::V2::RequestOptions` 
+**request_options:** `BridgeApi::Services::V2::RequestOptions` 
     
 </dd>
 </dl>
@@ -3768,7 +3768,7 @@ client.services.v_2.cancel_service(id: "id")
 </dl>
 </details>
 
-<details><summary><code>client.services.v_2.<a href="/lib/bridge_api/services/v_2/client.rb">update_service</a>(id:, request) -> Bridge_api::Services::V2::Types::ServiceUpdateV2Response</code></summary>
+<details><summary><code>client.services.v_2.<a href="/lib/BridgeApi/services/v_2/client.rb">update_service</a>(id:, request) -> BridgeApi::Services::V2::Types::ServiceUpdateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -3818,7 +3818,7 @@ client.services.v_2.update_service(id: "id")
 <dl>
 <dd>
 
-**request:** `Bridge_api::Services::V2::Types::ServiceUpdateV2Request` 
+**request:** `BridgeApi::Services::V2::Types::ServiceUpdateV2Request` 
     
 </dd>
 </dl>
@@ -3826,7 +3826,7 @@ client.services.v_2.update_service(id: "id")
 <dl>
 <dd>
 
-**request_options:** `Bridge_api::Services::V2::RequestOptions` 
+**request_options:** `BridgeApi::Services::V2::RequestOptions` 
     
 </dd>
 </dl>
