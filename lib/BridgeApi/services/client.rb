@@ -243,6 +243,50 @@ module BridgeApi
       end
 
       # @param request_options [Hash]
+      # @param params [BridgeApi::Services::Types::ServiceSetReadyV1Request]
+      # @option request_options [String] :base_url
+      # @option request_options [Hash{String => Object}] :additional_headers
+      # @option request_options [Hash{String => Object}] :additional_query_parameters
+      # @option request_options [Hash{String => Object}] :additional_body_parameters
+      # @option request_options [Integer] :timeout_in_seconds
+      # @option params [String] :id
+      # @option params [BridgeApi::Services::Types::ServiceSetReadyV1ParametersType] :type
+      #
+      # @example
+      #   client.services.set_ready_service(
+      #     id: "id",
+      #     type: "PATIENT_CONSENT",
+      #     ready: true
+      #   )
+      #
+      # @return [BridgeApi::Services::Types::ServiceSetReadyV1Response]
+      def set_ready_service(request_options: {}, **params)
+        params = BridgeApi::Internal::Types::Utils.normalize_keys(params)
+        path_param_names = %i[id type]
+        body_params = params.except(*path_param_names)
+
+        request = BridgeApi::Internal::JSON::Request.new(
+          base_url: request_options[:base_url],
+          method: "POST",
+          path: "/api/services/#{URI.encode_uri_component(params[:id].to_s)}/tasks/#{URI.encode_uri_component(params[:type].to_s)}",
+          body: BridgeApi::Services::Types::ServiceSetReadyV1Request.new(body_params).to_h,
+          request_options: request_options
+        )
+        begin
+          response = @client.send(request)
+        rescue Net::HTTPRequestTimeout
+          raise BridgeApi::Errors::TimeoutError
+        end
+        code = response.code.to_i
+        if code.between?(200, 299)
+          (response.body.to_s.empty? ? nil : BridgeApi::Services::Types::ServiceSetReadyV1Response.load(response.body))
+        else
+          error_class = BridgeApi::Errors::ResponseError.subclass_for_code(code)
+          raise error_class.new(response.body, code: code)
+        end
+      end
+
+      # @param request_options [Hash]
       # @param params [Hash]
       # @option request_options [String] :base_url
       # @option request_options [Hash{String => Object}] :additional_headers

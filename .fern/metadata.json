@@ -5,10 +5,10 @@
   "generatorConfig": {
     "moduleName": "BridgeApi"
   },
-  "originGitCommit": "69bf8437def7fa4a498bb6b2f5b33edc3b277fcb",
+  "originGitCommit": "948bed04407e36804a653cb04e4455c70b7e75b2",
   "originGitCommitIsDirty": true,
   "invokedBy": "ci",
-  "requestedVersion": "0.1.4",
+  "requestedVersion": "0.1.5",
   "ciProvider": "github",
-  "sdkVersion": "0.1.4"
+  "sdkVersion": "0.1.5"
 }

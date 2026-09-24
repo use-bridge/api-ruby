@@ -3480,6 +3480,74 @@ client.services.bill_service(id: "id")
 </dl>
 </details>
 
+<details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">set_ready_service</a>(id:, type:, request) -> BridgeApi::Services::Types::ServiceSetReadyV1Response</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.services.set_ready_service(
+  id: "id",
+  type: "PATIENT_CONSENT",
+  ready: true
+)
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `String` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**type:** `BridgeApi::Services::Types::ServiceSetReadyV1ParametersType` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request:** `BridgeApi::Services::Types::ServiceSetReadyV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Services::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 <details><summary><code>client.services.<a href="/lib/BridgeApi/services/client.rb">get_service_note</a>(id:) -> BridgeApi::Services::Types::ServiceNoteGetV1Response</code></summary>
 <dl>
 <dd>
