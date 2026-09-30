@@ -1125,6 +1125,132 @@ client.events.get_event(id: "id")
 </dl>
 </details>
 
+## Integrations HealthiePatient
+<details><summary><code>client.integrations.healthie_patient.<a href="/lib/BridgeApi/integrations/healthie_patient/client.rb">get_healthie_client_healthie_patient</a>(id:) -> BridgeApi::Integrations::HealthiePatient::Types::HealthiePatientGetHealthieClientV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Patient for a Healthie client id.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.healthie_patient.get_healthie_client_healthie_patient(id: "id")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `String` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::HealthiePatient::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## Integrations HealthiePatients
+<details><summary><code>client.integrations.healthie_patients.<a href="/lib/BridgeApi/integrations/healthie_patients/client.rb">ensure_healthie_client_healthie_patient</a>(request) -> BridgeApi::Integrations::HealthiePatients::Types::HealthiePatientEnsureHealthieClientV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Resolves or syncs a Bridge Patient for a Healthie client id. Returns the same shape as Patient create (including a fresh patient token).
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.healthie_patients.ensure_healthie_client_healthie_patient(healthie_client_id: "healthieClientId")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `BridgeApi::Integrations::HealthiePatients::Types::HealthiePatientEnsureHealthieClientV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::HealthiePatients::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 ## Notes
 <details><summary><code>client.notes.<a href="/lib/BridgeApi/notes/client.rb">create_note</a>(request) -> BridgeApi::Notes::Types::NoteCreateV1Response</code></summary>
 <dl>

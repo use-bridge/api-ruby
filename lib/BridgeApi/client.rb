@@ -11,7 +11,7 @@ module BridgeApi
       @raw_client = BridgeApi::Internal::Http::RawClient.new(
         base_url: base_url || BridgeApi::Environment::PRODUCTION,
         headers: {
-          "User-Agent" => "usebridge-api/0.1.5",
+          "User-Agent" => "usebridge-api/0.1.6",
           "X-Fern-Language" => "Ruby",
           "X-API-Key" => api_key.to_s
         },
@@ -37,6 +37,11 @@ module BridgeApi
     # @return [BridgeApi::Events::Client]
     def events
       @events ||= BridgeApi::Events::Client.new(client: @raw_client)
+    end
+
+    # @return [BridgeApi::Integrations::Client]
+    def integrations
+      @integrations ||= BridgeApi::Integrations::Client.new(client: @raw_client)
     end
 
     # @return [BridgeApi::Notes::Client]
