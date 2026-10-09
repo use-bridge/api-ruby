@@ -35,6 +35,7 @@ module BridgeApi
           BILLING_FREQUENCY_LIMIT = "BILLING_FREQUENCY_LIMIT"
           PATIENT_RECONSENT = "PATIENT_RECONSENT"
           PROVIDER_CHANGED = "PROVIDER_CHANGED"
+          PATIENT_DOB = "PATIENT_DOB"
         end
       end
     end
