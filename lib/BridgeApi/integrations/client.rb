@@ -19,6 +19,16 @@ module BridgeApi
       def healthie_patients
         @healthie_patients ||= BridgeApi::Integrations::HealthiePatients::Client.new(client: @client)
       end
+
+      # @return [BridgeApi::HealthieService::Client]
+      def healthie_service
+        @healthie_service ||= BridgeApi::Integrations::HealthieService::Client.new(client: @client)
+      end
+
+      # @return [BridgeApi::HealthieServices::Client]
+      def healthie_services
+        @healthie_services ||= BridgeApi::Integrations::HealthieServices::Client.new(client: @client)
+      end
     end
   end
 end

@@ -1251,6 +1251,132 @@ client.integrations.healthie_patients.ensure_healthie_client_healthie_patient(he
 </dl>
 </details>
 
+## Integrations HealthieService
+<details><summary><code>client.integrations.healthie_service.<a href="/lib/BridgeApi/integrations/healthie_service/client.rb">get_healthie_appointment_healthie_service</a>(id:) -> BridgeApi::Integrations::HealthieService::Types::HealthieServiceGetHealthieAppointmentV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Service for a Healthie appointment id.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.healthie_service.get_healthie_appointment_healthie_service(id: "id")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `String` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::HealthieService::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## Integrations HealthieServices
+<details><summary><code>client.integrations.healthie_services.<a href="/lib/BridgeApi/integrations/healthie_services/client.rb">ensure_healthie_appointment_healthie_service</a>(request) -> BridgeApi::Integrations::HealthieServices::Types::HealthieServiceEnsureHealthieAppointmentV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Resolves or syncs a Bridge Service and its parent Patient for a Healthie appointment id. Returns the same shape as Service create.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.healthie_services.ensure_healthie_appointment_healthie_service(healthie_appointment_id: "healthieAppointmentId")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `BridgeApi::Integrations::HealthieServices::Types::HealthieServiceEnsureHealthieAppointmentV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::HealthieServices::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 ## Notes
 <details><summary><code>client.notes.<a href="/lib/BridgeApi/notes/client.rb">create_note</a>(request) -> BridgeApi::Notes::Types::NoteCreateV1Response</code></summary>
 <dl>
