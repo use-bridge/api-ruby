@@ -1125,6 +1125,132 @@ client.events.get_event(id: "id")
 </dl>
 </details>
 
+## Integrations CanvasPatient
+<details><summary><code>client.integrations.canvas_patient.<a href="/lib/BridgeApi/integrations/canvas_patient/client.rb">get_canvas_patient_canvas_patient</a>(id:) -> BridgeApi::Integrations::CanvasPatient::Types::CanvasPatientGetCanvasPatientV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Patient for a Canvas Patient ID.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.canvas_patient.get_canvas_patient_canvas_patient(id: "id")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `String` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::CanvasPatient::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## Integrations CanvasPatients
+<details><summary><code>client.integrations.canvas_patients.<a href="/lib/BridgeApi/integrations/canvas_patients/client.rb">ensure_canvas_patient_canvas_patient</a>(request) -> BridgeApi::Integrations::CanvasPatients::Types::CanvasPatientEnsureCanvasPatientV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Resolves or syncs a Bridge Patient for a Canvas Patient ID. Returns the same shape as Patient create, including a fresh patient token.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.canvas_patients.ensure_canvas_patient_canvas_patient(canvas_patient_id: "canvasPatientId")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `BridgeApi::Integrations::CanvasPatients::Types::CanvasPatientEnsureCanvasPatientV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::CanvasPatients::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 ## Integrations HealthiePatient
 <details><summary><code>client.integrations.healthie_patient.<a href="/lib/BridgeApi/integrations/healthie_patient/client.rb">get_healthie_client_healthie_patient</a>(id:) -> BridgeApi::Integrations::HealthiePatient::Types::HealthiePatientGetHealthieClientV1Response</code></summary>
 <dl>

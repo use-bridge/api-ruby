@@ -10,6 +10,16 @@ module BridgeApi
         @client = client
       end
 
+      # @return [BridgeApi::CanvasPatient::Client]
+      def canvas_patient
+        @canvas_patient ||= BridgeApi::Integrations::CanvasPatient::Client.new(client: @client)
+      end
+
+      # @return [BridgeApi::CanvasPatients::Client]
+      def canvas_patients
+        @canvas_patients ||= BridgeApi::Integrations::CanvasPatients::Client.new(client: @client)
+      end
+
       # @return [BridgeApi::HealthiePatient::Client]
       def healthie_patient
         @healthie_patient ||= BridgeApi::Integrations::HealthiePatient::Client.new(client: @client)
