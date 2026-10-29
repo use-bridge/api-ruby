@@ -7,6 +7,7 @@ module BridgeApi
         extend BridgeApi::Internal::Types::Enum
 
         NO_SHOW = "NO_SHOW"
+        VOID = "VOID"
       end
     end
   end

@@ -1125,6 +1125,132 @@ client.events.get_event(id: "id")
 </dl>
 </details>
 
+## Integrations CanvasEncounter
+<details><summary><code>client.integrations.canvas_encounter.<a href="/lib/BridgeApi/integrations/canvas_encounter/client.rb">get_canvas_encounter_canvas_encounter</a>(id:) -> BridgeApi::Integrations::CanvasEncounter::Types::CanvasEncounterGetCanvasEncounterV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Service for a Canvas Encounter ID. This lookup never calls Canvas.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.canvas_encounter.get_canvas_encounter_canvas_encounter(id: "id")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `String` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::CanvasEncounter::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## Integrations CanvasEncounters
+<details><summary><code>client.integrations.canvas_encounters.<a href="/lib/BridgeApi/integrations/canvas_encounters/client.rb">ensure_canvas_encounter_canvas_encounter</a>(request) -> BridgeApi::Integrations::CanvasEncounters::Types::CanvasEncounterEnsureCanvasEncounterV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Resolves or syncs a Bridge Service for a Canvas Encounter ID. One Encounter is one Service.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.canvas_encounters.ensure_canvas_encounter_canvas_encounter(canvas_encounter_id: "canvasEncounterId")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `BridgeApi::Integrations::CanvasEncounters::Types::CanvasEncounterEnsureCanvasEncounterV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::CanvasEncounters::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 ## Integrations CanvasPatient
 <details><summary><code>client.integrations.canvas_patient.<a href="/lib/BridgeApi/integrations/canvas_patient/client.rb">get_canvas_patient_canvas_patient</a>(id:) -> BridgeApi::Integrations::CanvasPatient::Types::CanvasPatientGetCanvasPatientV1Response</code></summary>
 <dl>
