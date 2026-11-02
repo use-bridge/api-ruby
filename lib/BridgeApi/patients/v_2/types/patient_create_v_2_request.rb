@@ -11,9 +11,9 @@ module BridgeApi
 
           field :last_name, -> { String }, optional: false, nullable: false, api_name: "lastName"
 
-          field :email, -> { String }, optional: false, nullable: false
+          field :email, -> { String }, optional: true, nullable: false
 
-          field :date_of_birth, -> { String }, optional: false, nullable: false, api_name: "dateOfBirth"
+          field :date_of_birth, -> { String }, optional: true, nullable: false, api_name: "dateOfBirth"
 
           field :phone, -> { String }, optional: true, nullable: false
 

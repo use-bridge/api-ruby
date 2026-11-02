@@ -22,9 +22,7 @@ module BridgeApi
         # @example
         #   client.patients.v_2.create_patient(
         #     first_name: "firstName",
-        #     last_name: "lastName",
-        #     email: "email",
-        #     date_of_birth: "2024-01-15T09:30:00Z"
+        #     last_name: "lastName"
         #   )
         #
         # @return [BridgeApi::Patients::V2::Types::PatientCreateV2Response]
