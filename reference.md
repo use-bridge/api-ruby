@@ -1125,69 +1125,6 @@ client.events.get_event(id: "id")
 </dl>
 </details>
 
-## Integrations CanvasEncounter
-<details><summary><code>client.integrations.canvas_encounter.<a href="/lib/BridgeApi/integrations/canvas_encounter/client.rb">get_canvas_encounter_canvas_encounter</a>(id:) -> BridgeApi::Integrations::CanvasEncounter::Types::CanvasEncounterGetCanvasEncounterV1Response</code></summary>
-<dl>
-<dd>
-
-#### 📝 Description
-
-<dl>
-<dd>
-
-<dl>
-<dd>
-
-Returns the linked Bridge Service for a Canvas Encounter ID. This lookup never calls Canvas.
-</dd>
-</dl>
-</dd>
-</dl>
-
-#### 🔌 Usage
-
-<dl>
-<dd>
-
-<dl>
-<dd>
-
-```ruby
-client.integrations.canvas_encounter.get_canvas_encounter_canvas_encounter(id: "id")
-```
-</dd>
-</dl>
-</dd>
-</dl>
-
-#### ⚙️ Parameters
-
-<dl>
-<dd>
-
-<dl>
-<dd>
-
-**id:** `String` 
-    
-</dd>
-</dl>
-
-<dl>
-<dd>
-
-**request_options:** `BridgeApi::Integrations::CanvasEncounter::RequestOptions` 
-    
-</dd>
-</dl>
-</dd>
-</dl>
-
-
-</dd>
-</dl>
-</details>
-
 ## Integrations CanvasEncounters
 <details><summary><code>client.integrations.canvas_encounters.<a href="/lib/BridgeApi/integrations/canvas_encounters/client.rb">ensure_canvas_encounter_canvas_encounter</a>(request) -> BridgeApi::Integrations::CanvasEncounters::Types::CanvasEncounterEnsureCanvasEncounterV1Response</code></summary>
 <dl>
@@ -1251,8 +1188,7 @@ client.integrations.canvas_encounters.ensure_canvas_encounter_canvas_encounter(c
 </dl>
 </details>
 
-## Integrations CanvasPatient
-<details><summary><code>client.integrations.canvas_patient.<a href="/lib/BridgeApi/integrations/canvas_patient/client.rb">get_canvas_patient_canvas_patient</a>(id:) -> BridgeApi::Integrations::CanvasPatient::Types::CanvasPatientGetCanvasPatientV1Response</code></summary>
+<details><summary><code>client.integrations.canvas_encounters.<a href="/lib/BridgeApi/integrations/canvas_encounters/client.rb">get_canvas_encounter_canvas_encounter</a>(id:) -> BridgeApi::Integrations::CanvasEncounters::Types::CanvasEncounterGetCanvasEncounterV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1264,7 +1200,7 @@ client.integrations.canvas_encounters.ensure_canvas_encounter_canvas_encounter(c
 <dl>
 <dd>
 
-Returns the linked Bridge Patient for a Canvas Patient ID.
+Returns the linked Bridge Service for a Canvas Encounter ID. This lookup never calls Canvas.
 </dd>
 </dl>
 </dd>
@@ -1279,7 +1215,7 @@ Returns the linked Bridge Patient for a Canvas Patient ID.
 <dd>
 
 ```ruby
-client.integrations.canvas_patient.get_canvas_patient_canvas_patient(id: "id")
+client.integrations.canvas_encounters.get_canvas_encounter_canvas_encounter(id: "id")
 ```
 </dd>
 </dl>
@@ -1302,7 +1238,7 @@ client.integrations.canvas_patient.get_canvas_patient_canvas_patient(id: "id")
 <dl>
 <dd>
 
-**request_options:** `BridgeApi::Integrations::CanvasPatient::RequestOptions` 
+**request_options:** `BridgeApi::Integrations::CanvasEncounters::RequestOptions` 
     
 </dd>
 </dl>
@@ -1377,8 +1313,7 @@ client.integrations.canvas_patients.ensure_canvas_patient_canvas_patient(canvas_
 </dl>
 </details>
 
-## Integrations HealthiePatient
-<details><summary><code>client.integrations.healthie_patient.<a href="/lib/BridgeApi/integrations/healthie_patient/client.rb">get_healthie_client_healthie_patient</a>(id:) -> BridgeApi::Integrations::HealthiePatient::Types::HealthiePatientGetHealthieClientV1Response</code></summary>
+<details><summary><code>client.integrations.canvas_patients.<a href="/lib/BridgeApi/integrations/canvas_patients/client.rb">get_canvas_patient_canvas_patient</a>(id:) -> BridgeApi::Integrations::CanvasPatients::Types::CanvasPatientGetCanvasPatientV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1390,7 +1325,7 @@ client.integrations.canvas_patients.ensure_canvas_patient_canvas_patient(canvas_
 <dl>
 <dd>
 
-Returns the linked Bridge Patient for a Healthie client id.
+Returns the linked Bridge Patient for a Canvas Patient ID.
 </dd>
 </dl>
 </dd>
@@ -1405,7 +1340,7 @@ Returns the linked Bridge Patient for a Healthie client id.
 <dd>
 
 ```ruby
-client.integrations.healthie_patient.get_healthie_client_healthie_patient(id: "id")
+client.integrations.canvas_patients.get_canvas_patient_canvas_patient(id: "id")
 ```
 </dd>
 </dl>
@@ -1428,7 +1363,7 @@ client.integrations.healthie_patient.get_healthie_client_healthie_patient(id: "i
 <dl>
 <dd>
 
-**request_options:** `BridgeApi::Integrations::HealthiePatient::RequestOptions` 
+**request_options:** `BridgeApi::Integrations::CanvasPatients::RequestOptions` 
     
 </dd>
 </dl>
@@ -1503,8 +1438,7 @@ client.integrations.healthie_patients.ensure_healthie_client_healthie_patient(he
 </dl>
 </details>
 
-## Integrations HealthieService
-<details><summary><code>client.integrations.healthie_service.<a href="/lib/BridgeApi/integrations/healthie_service/client.rb">get_healthie_appointment_healthie_service</a>(id:) -> BridgeApi::Integrations::HealthieService::Types::HealthieServiceGetHealthieAppointmentV1Response</code></summary>
+<details><summary><code>client.integrations.healthie_patients.<a href="/lib/BridgeApi/integrations/healthie_patients/client.rb">get_healthie_client_healthie_patient</a>(id:) -> BridgeApi::Integrations::HealthiePatients::Types::HealthiePatientGetHealthieClientV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1516,7 +1450,7 @@ client.integrations.healthie_patients.ensure_healthie_client_healthie_patient(he
 <dl>
 <dd>
 
-Returns the linked Bridge Service for a Healthie appointment id.
+Returns the linked Bridge Patient for a Healthie client id.
 </dd>
 </dl>
 </dd>
@@ -1531,7 +1465,7 @@ Returns the linked Bridge Service for a Healthie appointment id.
 <dd>
 
 ```ruby
-client.integrations.healthie_service.get_healthie_appointment_healthie_service(id: "id")
+client.integrations.healthie_patients.get_healthie_client_healthie_patient(id: "id")
 ```
 </dd>
 </dl>
@@ -1554,7 +1488,7 @@ client.integrations.healthie_service.get_healthie_appointment_healthie_service(i
 <dl>
 <dd>
 
-**request_options:** `BridgeApi::Integrations::HealthieService::RequestOptions` 
+**request_options:** `BridgeApi::Integrations::HealthiePatients::RequestOptions` 
     
 </dd>
 </dl>
@@ -1610,6 +1544,68 @@ client.integrations.healthie_services.ensure_healthie_appointment_healthie_servi
 <dd>
 
 **request:** `BridgeApi::Integrations::HealthieServices::Types::HealthieServiceEnsureHealthieAppointmentV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `BridgeApi::Integrations::HealthieServices::RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.integrations.healthie_services.<a href="/lib/BridgeApi/integrations/healthie_services/client.rb">get_healthie_appointment_healthie_service</a>(id:) -> BridgeApi::Integrations::HealthieServices::Types::HealthieServiceGetHealthieAppointmentV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Service for a Healthie appointment id.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```ruby
+client.integrations.healthie_services.get_healthie_appointment_healthie_service(id: "id")
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `String` 
     
 </dd>
 </dl>

@@ -10,19 +10,9 @@ module BridgeApi
         @client = client
       end
 
-      # @return [BridgeApi::CanvasEncounter::Client]
-      def canvas_encounter
-        @canvas_encounter ||= BridgeApi::Integrations::CanvasEncounter::Client.new(client: @client)
-      end
-
       # @return [BridgeApi::CanvasEncounters::Client]
       def canvas_encounters
         @canvas_encounters ||= BridgeApi::Integrations::CanvasEncounters::Client.new(client: @client)
-      end
-
-      # @return [BridgeApi::CanvasPatient::Client]
-      def canvas_patient
-        @canvas_patient ||= BridgeApi::Integrations::CanvasPatient::Client.new(client: @client)
       end
 
       # @return [BridgeApi::CanvasPatients::Client]
@@ -30,19 +20,9 @@ module BridgeApi
         @canvas_patients ||= BridgeApi::Integrations::CanvasPatients::Client.new(client: @client)
       end
 
-      # @return [BridgeApi::HealthiePatient::Client]
-      def healthie_patient
-        @healthie_patient ||= BridgeApi::Integrations::HealthiePatient::Client.new(client: @client)
-      end
-
       # @return [BridgeApi::HealthiePatients::Client]
       def healthie_patients
         @healthie_patients ||= BridgeApi::Integrations::HealthiePatients::Client.new(client: @client)
-      end
-
-      # @return [BridgeApi::HealthieService::Client]
-      def healthie_service
-        @healthie_service ||= BridgeApi::Integrations::HealthieService::Client.new(client: @client)
       end
 
       # @return [BridgeApi::HealthieServices::Client]
