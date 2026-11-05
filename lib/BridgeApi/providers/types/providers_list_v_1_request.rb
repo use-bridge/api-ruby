@@ -6,6 +6,8 @@ module BridgeApi
       class ProvidersListV1Request < Internal::Types::Model
         field :filter_active, -> { Internal::Types::Boolean }, optional: true, nullable: false, api_name: "filter.active"
 
+        field :filter_name, -> { String }, optional: true, nullable: false, api_name: "filter.name"
+
         field :page, -> { Integer }, optional: true, nullable: false
 
         field :limit, -> { Integer }, optional: true, nullable: false

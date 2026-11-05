@@ -3093,6 +3093,14 @@ client.providers.list_providers
 <dl>
 <dd>
 
+**filter_name:** `String` — Value should be JSON-encoded, for example filter.name="Ada"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
 **page:** `Integer` 
     
 </dd>

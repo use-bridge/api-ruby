@@ -70,6 +70,7 @@ module BridgeApi
       # @option request_options [Hash{String => Object}] :additional_body_parameters
       # @option request_options [Integer] :timeout_in_seconds
       # @option params [Boolean, nil] :filter_active
+      # @option params [String, nil] :filter_name
       # @option params [Integer, nil] :page
       # @option params [Integer, nil] :limit
       #
@@ -81,6 +82,7 @@ module BridgeApi
         params = BridgeApi::Internal::Types::Utils.normalize_keys(params)
         query_params = {}
         query_params["filter.active"] = params[:filter_active] if params.key?(:filter_active)
+        query_params["filter.name"] = params[:filter_name] if params.key?(:filter_name)
         query_params["page"] = params[:page] if params.key?(:page)
         query_params["limit"] = params[:limit] if params.key?(:limit)
 
